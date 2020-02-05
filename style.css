@@ -1,12 +1,17 @@
 body {
     margin: 0;
     color: black;
+     font-family: "roboto", san-serif;
 }
 main {
+
     width: 70%;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem ;
 }
 /*HEADER.................................................*/
 
@@ -48,8 +53,8 @@ nav ul a:hover {
 
 
 .categories {
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 2% auto;
 }
 
 .categories ul {
@@ -73,7 +78,28 @@ nav ul a:hover {
 .categories ul a:hover {
     text-shadow: 2px 2px 2px grey;
 }
+.img {
+    max-width: 100%;
+    height: auto;
 
+}
+article img {
+    width: 70%;
+    align-self: center;
+}
+article {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+
+}
+.dish {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid grey ;
+
+}
 @media all and (max-width: 499px) {
     nav ul li:last-of-type a {
         border-bottom: none;
