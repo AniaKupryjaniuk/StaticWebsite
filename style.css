@@ -1,8 +1,14 @@
 body {
     margin: 0;
     color: black;
-
 }
+main {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*HEADER.................................................*/
 
 #navigation {
     width: 100%;
@@ -25,6 +31,7 @@ nav ul a {
     padding: 1rem;
     color: black;
     text-align: center;
+
 }
 
 nav ul a:hover {
@@ -37,10 +44,39 @@ nav ul a:hover {
     text-shadow: 2px 2px 2px white;
 }
 
+/*MAIN.................................................*/
+
+
+.categories {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.categories ul a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.categories ul a:hover {
+    text-shadow: 2px 2px 2px grey;
+}
+
 @media all and (max-width: 499px) {
     nav ul li:last-of-type a {
         border-bottom: none;
-        /* no border on the bottom of the last link - but only on mobile */
     }
 }
 
@@ -57,7 +93,6 @@ nav ul a:hover {
 
     nav ul li a {
         min-height: 100%;
-        /* important for "stretching" the link container "y-axis"*/
     }
 }
 
