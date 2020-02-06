@@ -48,6 +48,10 @@ nav ul a:hover {
     border-bottom: grey solid 2px;
     text-shadow: 2px 2px 2px white;
 }
+header h1 {
+    margin-left: 45%;
+
+}
 
 /*MAIN.................................................*/
 

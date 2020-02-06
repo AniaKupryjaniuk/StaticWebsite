@@ -9,5 +9,5 @@ aCopy.querySelector("h1").textContent = "Title";
 aCopy.querySelector("p span").textContent = "description";
 aCopy.querySelector("h2").textContent = "price";
 
-const maintemplate = document.querySelector("main");
-maintemplate.appendChild(aCopy)
+const parent = document.querySelector("main");
+parent.appendChild(aCopy)
