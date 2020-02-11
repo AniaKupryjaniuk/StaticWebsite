@@ -1,7 +1,8 @@
 body {
     margin: 0;
     color: black;
-     font-family: "roboto", san-serif;
+    background-color: #D7C8AD;
+    font-family: 'Roboto';
 }
 main {
 
@@ -18,7 +19,7 @@ main {
 #navigation {
     width: 100%;
     margin: 0 auto;
-    background-color: lightgrey;
+    background-color: #0A0A07;
 
 }
 
@@ -36,6 +37,8 @@ nav ul a {
     padding: 1rem;
     color: black;
     text-align: center;
+    color: #EBE8CB;
+
 
 }
 
@@ -49,9 +52,12 @@ nav ul a:hover {
     text-shadow: 2px 2px 2px white;
 }
 header h1 {
-    margin-left: 45%;
+    text-align: center;
+    color: #EBE8CB;
+    text-shadow: 2px 2px 2px black;
 
 }
+
 
 /*MAIN.................................................*/
 
@@ -59,6 +65,7 @@ header h1 {
 .categories {
     width: 70%;
     margin: 2% auto;
+    background-color: #A98E76;
 }
 
 .categories ul {
@@ -80,28 +87,25 @@ header h1 {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .categories ul a:hover {
-    text-shadow: 2px 2px 2px grey;
-}
-.img {
-    max-width: 100%;
-    height: auto;
+    color: #EBE8CB;
 
 }
 article img {
-    width: 70%;
-    align-self: center;
+    width: 100%;
+    align-content: center;
 }
 article {
+    background-color: #EBE8CB;
     display: flex;
     flex-flow: column;
     padding: 2rem;
-
 }
+
 .dish {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid grey ;
+    box-shadow: 5px 5px 5px #C1B49B;
 
 }
 @media all and (max-width: 499px) {

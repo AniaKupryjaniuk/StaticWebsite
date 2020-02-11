@@ -1,0 +1,11 @@
+main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1f, 1f));
+        grid-column-gap: .5fr;
+    background: grey;
+    }
+
+    img {
+        width: 300;
+        height: 400;
+    }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+</style>
 </head>
 
 <body>
@@ -13,13 +16,14 @@
         <div id="navigation">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
+        <h1> MENU </h1>
         <div class="categories">
             <ul>
                 <li><a href="">Starters</a></li>
@@ -29,34 +33,55 @@
                 <li><a href="">Sideorders</a></li>
             </ul>
         </div>
-        <h1> MENU </h1>
+
     </header>
     <main></main>
-<template>
+<!--
+          <section id="starters">
+        <h2>Starters</h2>
+-->
+    <template id="allDishes" >
+    <article class="dish">
+
+
+              <img class="pic" src="">
+              <h3>The Burger</h3>
+
+              <p class="soldout">Sold Out!</p>
+              <p class="price">xxx</p>
+              <p class="discountprice">69,-dk</p>
+
+              <section>
+              <p class="shortdescription">
+              </p>
+              <p class="longdescription">
+              </p>
+              </section>
+
+
+              <button>Read More</button>
+          </article>
+<!--
         <article class="dish">
-           <img src="../imgs/small/russisksalat-sm.jpg" alt="">
-            <h1>Russian Ringbread</h1>
-            <p><span> </span></p>
-            <p></p>
-            <h2></h2>
+        <h3> </h3>
+           <p class="soldout"></p>
+
+              <img src="../imgs/small/baltiskbondesuppe-sm.jpg" alt="" />
+              <p class="price price-discount"></p>
+              <p class="price price-full"></p>
+            <section class="info">
+              <p>
+              </p>
+              <p>
+              </p>
+              <p>Nothing further to say</p>
+              <button>Read More</button>
+            </section>
         </article>
-        <article class="dish">
-           <img src="../imgs/small/kaviarpandekager-sm.jpg" alt="">
-            <h1>Cabanossi with beetrootcreme</h1>
-            <p></p>
-            <p></p>
-        </article>
-        <article class="dish">
-           <img src="../imgs//small/boef-sm.jpg" alt="">
-            <h1>Caviar bruschetta</h1>
-            <p></p>
-            <p></p>
-        </article>
+-->
 </template>
 
-
-
-    <script src="script.js"> </script>
+    <script src="data.js"> </script>
 </body>
 
 </html>
