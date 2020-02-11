@@ -4,6 +4,10 @@ body {
     background-color: #D7C8AD;
     font-family: 'Roboto';
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main {
 
     width: 70%;
