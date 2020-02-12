@@ -7,8 +7,9 @@
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-</style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+    </style>
 </head>
 
 <body>
@@ -24,6 +25,9 @@
             </nav>
         </div>
         <h1> MENU </h1>
+
+        <nav class="catnav"> </nav>
+        <!--
 <!--
         <div class="categories">
             <ul>
@@ -35,25 +39,37 @@
             </ul>
         </div>
 -->
+        -->
 
     </header>
     <main></main>
 
-    <template id="allDishes" >
-    <article class="dish">
+    <template id="allDishes">
+        <article class="dish">
 
-              <img class="pic" src="">
-              <h3>The Burger</h3>
-              <p class="soldout">Sold Out!</p>
-              <p class="price">xxx</p>
-              <p class="discountprice">69,-dk</p>
-              <p class="shortdescription">
-              </p>
-              <p class="longdescription">
-              </p>
-              <button>Read More</button>
-          </article>
+            <img class="pic" src="">
+            <img class="dish_img" src="">
+            <h3>The Burger</h3>
+            <p class="soldout">Sold Out!</p>
+            <p class="price-discount"> <span></span> </p>
+            <p class="price-full"> <span></span></p>
+
+
+
 <!--
+            <p class="price">xxx</p>
+            <p class="discount"><span></span> dk</p>
+-->
+
+
+
+            <p class="shortdescription">
+            </p>
+            <p class="longdescription">
+            </p>
+            <button>Read More</button>
+        </article>
+        <!--
         <article class="dish">
         <h3> </h3>
            <p class="soldout"></p>
@@ -71,8 +87,15 @@
             </section>
         </article>
 -->
-</template>
-
+    </template>
+    <div class="modal-background hide">
+        <div class="modal-content">
+            <h3 class="modal-name">NAME</h3>
+            <img src="" alt="" class="modal-image" />
+            <p class="modal-description">LONG DESCRIPTION</p>
+            <h4 class="modal-price">PRICE</h4>
+        </div>
+    </div>
     <script src="data.js"> </script>
 </body>
 

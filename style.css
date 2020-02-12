@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+main section {
 
     width: 70%;
     margin-top: 2%;
@@ -17,6 +17,9 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem ;
+}
+h2 {
+    grid-column: 1 / -1;
 }
 /*HEADER.................................................*/
 
@@ -66,31 +69,52 @@ header h1 {
 /*MAIN.................................................*/
 
 
-.categories {
+.hide {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #7c1f17;
+  margin: 1em;
+  padding: 2em;
+}
+.catnav {
     width: 70%;
     margin: 2% auto;
     background-color: #A98E76;
-}
-
-.categories ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-}
-
-.categories ul a {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
-    display: block;
+    display: block row;
     padding: 1rem;
-    color: black;
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
 }
-.categories ul a:hover {
+
+.catnav a {
+
+
+    padding: 0;
+}
+
+.discount {
+    display: none;
+}
+.soldout {
+    display: none;
+}
+
+.catnav a:hover {
     color: #EBE8CB;
 
 }
