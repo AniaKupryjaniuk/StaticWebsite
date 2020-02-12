@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+    </style>
 </head>
 
 <body>
@@ -13,16 +17,18 @@
         <div id="navigation">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
+        <h1> MENU </h1>
 
-    </header>
-    <main>
+        <nav class="catnav"> </nav>
+        <!--
+<!--
         <div class="categories">
             <ul>
                 <li><a href="">Starters</a></li>
@@ -32,22 +38,65 @@
                 <li><a href="">Sideorders</a></li>
             </ul>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </main>
+-->
+        -->
 
-    <script src="script.js"> </script>
+    </header>
+    <main></main>
+
+    <template id="allDishes">
+        <article class="dish">
+
+            <img class="pic" src="">
+            <img class="dish_img" src="">
+            <h3>The Burger</h3>
+            <p class="soldout">Sold Out!</p>
+            <p class="price-discount"> <span></span> </p>
+            <p class="price-full"> <span></span></p>
+
+
+
+<!--
+            <p class="price">xxx</p>
+            <p class="discount"><span></span> dk</p>
+-->
+
+
+
+            <p class="shortdescription">
+            </p>
+            <p class="longdescription">
+            </p>
+            <button>Read More</button>
+        </article>
+        <!--
+        <article class="dish">
+        <h3> </h3>
+           <p class="soldout"></p>
+
+              <img src="../imgs/small/baltiskbondesuppe-sm.jpg" alt="" />
+              <p class="price price-discount"></p>
+              <p class="price price-full"></p>
+            <section class="info">
+              <p>
+              </p>
+              <p>
+              </p>
+              <p>Nothing further to say</p>
+              <button>Read More</button>
+            </section>
+        </article>
+-->
+    </template>
+    <div class="modal-background hide">
+        <div class="modal-content">
+            <h3 class="modal-name">NAME</h3>
+            <img src="" alt="" class="modal-image" />
+            <p class="modal-description">LONG DESCRIPTION</p>
+            <h4 class="modal-price">PRICE</h4>
+        </div>
+    </div>
+    <script src="data.js"> </script>
 </body>
 
 </html>
