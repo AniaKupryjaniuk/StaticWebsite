@@ -22,6 +22,11 @@ main section {
     grid-gap: 1rem ;
 }
 h2 {
+    text-transform: uppercase;
+    margin-top: 5%;
+    text-align: center;
+    color: #EBE8CB;
+    text-shadow: 2px 2px 2px #9F7E5F ;
     grid-column: 1 / -1;
 }
 /*HEADER.................................................*/
@@ -53,19 +58,13 @@ nav ul a {
 }
 
 nav ul a:hover {
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px #9F7E5F ;
 }
 
 .active {
     padding-bottom: 4px;
     border-bottom: grey solid 2px;
     text-shadow: 2px 2px 2px white;
-}
-header h1 {
-    text-align: center;
-    color: #EBE8CB;
-    text-shadow: 2px 2px 2px black;
-
 }
 
 
@@ -77,14 +76,13 @@ header h1 {
   color: white;
   padding: 16px 32px;
   text-align: center;
-  font-size: 16px;
   margin: 4px 2px;
   margin-top: auto;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #3e8e41;
+  background-color: #9F7E5F;
     color: white; }
 
 .hide {
