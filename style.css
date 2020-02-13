@@ -1,7 +1,10 @@
 body {
     margin: 0;
     color: black;
-    background-color: #D7C8AD;
+    background-image: url(../imgs/Tramonto_1_1920px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Roboto';
 }
 html {
