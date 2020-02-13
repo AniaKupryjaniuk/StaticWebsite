@@ -62,7 +62,10 @@ function oneDish(dish) {
     clone.querySelector("h3").textContent = dish.name;
     clone.querySelector(".shortdescription").textContent = dish.shortdescription;
     clone.querySelector(".longdescription").textContent = dish.longdescription;
-
+//    clone.querySelector(".soldout").style.display = "inline";
+//    clone.querySelector(".soldout").textContent = dish.soldout;
+    if (dish.soldout) {
+        clone.querySelector(".soldout").textContent = dish.soldout; }
     if (dish.discount) {
         clone.querySelector(".price-discount span").textContent = dish.price;
         const new_price = Math.round(dish.price - dish.price * dish.discount / 100);
@@ -86,6 +89,7 @@ function oneDish(dish) {
         modal.querySelector(".modal-name").textContent = data.name;
         modal.querySelector(".modal-description").textContent = data.longdescription;
         modal.querySelector(".modal-price").textContent = data.price + " dkk";
+        modal.querySelector(".modal-pic").src = "medium/" + data.image + "-md.jpg";
         //...
         modal.classList.remove("hide");
     }
