@@ -68,6 +68,21 @@ header h1 {
 
 /*MAIN.................................................*/
 
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+    color: white; }
 
 .hide {
   display: none;
@@ -89,21 +104,21 @@ header h1 {
 }
 .catnav {
     width: 70%;
-    margin: 2% auto;
+    margin-left: 15%;
+    margin-right: 15%;
+
     background-color: #A98E76;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    display: block row;
     padding: 1rem;
     text-align: center;
-    list-style: none;
+    justify-content: space-around
+
 }
 
 .catnav a {
-
-
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
     padding: 0;
 }
 
@@ -155,6 +170,11 @@ article {
 
     nav ul li a {
         min-height: 100%;
+    }
+}
+@media all and (max-width: 499px) {
+    nav ul li:last-of-type a {
+        border-bottom: none;
     }
 }
 
