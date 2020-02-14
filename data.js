@@ -29,11 +29,6 @@ function createCategories(data) {
     getProducts();
 }
 
-
-
-
-
-
 function getProducts() {
     fetch("https://kea-alt-del.dk/t5/api/productlist")
         .then(function (response) {
@@ -65,15 +60,25 @@ function oneDish(dish) {
 //    clone.querySelector(".soldout").style.display = "inline";
 //    clone.querySelector(".soldout").textContent = dish.soldout;
     if (dish.soldout) {
-        clone.querySelector(".soldout").textContent = dish.soldout; }
+        clone.querySelector(".soldout").style.display = "inline"; }
+     if (dish.vegetarian) {
+        clone.querySelector(".vegetarian").style.display = "inline"; }
+
+
+
     if (dish.discount) {
         clone.querySelector(".price-discount span").textContent = dish.price;
         const new_price = Math.round(dish.price - dish.price * dish.discount / 100);
         clone.querySelector(".price-full span").textContent = new_price;
+
     } else {
         clone.querySelector(".price-discount").remove();
         clone.querySelector(".price-full span").textContent = dish.price
     }
+        if (dish.alcohol) {
+        clone.querySelector(".alcohol").style.display = "inline";
+    }
+
 
     clone.querySelector("button").addEventListener("click", () => {
         console.log("click", dish)

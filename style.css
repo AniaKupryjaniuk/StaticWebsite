@@ -11,22 +11,33 @@ body {
 html {
     scroll-behavior: smooth;
 }
+main {
+    margin-top: 50%;
+}
 
 main section {
     background-color: ;
     width: 70%;
-    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
+h1 {
+    grid-auto-columns: 1 / -1;
+    grid-template-areas: 3/4;
+    margin-bottom: 0;
+    font-size: 6em;
+    color: white;
+    margin-left: 40%;
+    text-shadow: 2px 2px 2px #9F7E5F;
+}
 
 h2 {
     text-transform: uppercase;
-    margin-top: 10%;
     margin-bottom: 0;
+    margin-top: 10%;
     padding: 0;
     text-align: center;
     color: #EBE8CB;
@@ -76,13 +87,6 @@ nav ul a {
 nav ul a:hover {
     text-shadow: 2px 2px 2px #9F7E5F;
 }
-
-.active {
-    padding-bottom: 4px;
-    border-bottom: grey solid 2px;
-    text-shadow: 2px 2px 2px white;
-}
-
 .soldout,
 .vegetarian,
 alcohol {
@@ -130,15 +134,16 @@ alcohol {
     margin-right: auto;
     padding: 2em;
 }
-
 .catnav {
     display: flex;
     flex-flow: row;
-    width: 68%;
-    margin-left: 15%;
-    top: 6%;
+    width: 50%;
+    margin-left: 25%;
+    top: 9%;
+/*
     background-color: #EBE8CB;
     border: solid #1B130D;
+*/
     position: fixed;
     padding: 1rem;
 }
@@ -149,7 +154,8 @@ alcohol {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #1B130D;
+/*    color: #1B130D;*/
+    color: white;
     justify-content: space-around;
     list-style: none;
     text-decoration: none;
@@ -160,9 +166,19 @@ alcohol {
 .catnav a:hover {
     text-shadow: 2px 2px 2px #9F7E5F;
 }
-
+.price {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
 .price-full {
     font-size: 1.5em;
+    background: white;
+    margin: 0;
+padding: 5px;
+    border: solid #9F7E5F;
 }
 
 .price-discount {
@@ -170,6 +186,8 @@ alcohol {
     color: red;
     text-decoration: line-through;
     left: -4px;
+    margin: 0;
+    padding: 5px;
 }
 
 .discount {
@@ -178,7 +196,28 @@ alcohol {
 
 .soldout {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bolder;
+    color: red;
 
+}
+.vegetarian {
+    display: none;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+
+}
+.name {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.alcohol {
+    display: none;
 }
 
 img.pic {
