@@ -65,7 +65,6 @@ function oneDish(dish) {
         clone.querySelector(".vegetarian").style.display = "inline"; }
 
 
-
     if (dish.discount) {
         clone.querySelector(".price-discount span").textContent = dish.price;
         const new_price = Math.round(dish.price - dish.price * dish.discount / 100);
